@@ -102,7 +102,7 @@ public class ChristmasExercises {
         
         System.out.print("\nStandard Deviation: " + standardDeviation);
         
-       
+      
         int[] numbers = new int[10];
         Scanner scanner = new Scanner(System.in);
         for(int i=0; i<numbers.length; i++){
@@ -136,6 +136,56 @@ public class ChristmasExercises {
             }
             System.out.println(); // Print a new line after each row
         }
+        
+        
+        //ARRAY CLASS 15/01/2025
+
+         int[][] classArr = new int[4][4];
+         for(int i=0; i< classArr.length; i++){
+             for(int j=0; j<classArr[0].length; j++){
+                 System.out.print("Enter a value at index[" + (i+1) + "][" + (j+1) + "]: ");
+                 classArr[i][j] = scanner.nextInt();
+             }
+         }
+         
+         for(int[] row: classArr){
+           for(int value: row){
+               System.out.print(value + " ");
+           }  
+           System.out.println();
+         }
+
+
+       // Printing elements in the array
+        for(int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                System.out.print(classArr[i][j]);
+            }
+            System.out.println();
+        }
+        
+        
+        // Printing the elements in the diagonal
+        for(int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                if(i==j){
+                    System.out.print(classArr[i][j]);
+                }
+            }
+            System.out.println();
+        }
+        
+        // Printing the element in the diagonal
+        for(int i=0; i<classArr.length; i++){
+            System.out.print(classArr[i][i]);
+        }
+        
+        
+         
+         
+         
+        
+        
         
         
         
